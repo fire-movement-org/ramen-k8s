@@ -9,6 +9,9 @@ nodes:
       - containerPort: 443
         hostPort: 443
         protocol: TCP
+      - containerPort: 30001 # postgres
+        hostPort: 30001
+        protocol: TCP
   - role: worker
   - role: worker
   - role: worker
